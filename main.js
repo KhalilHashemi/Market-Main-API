@@ -11,7 +11,7 @@ async function main () {
     const port = process.env.PORT;
     require("./src/config/mongoose.config");
     app.use(cors({
-        origin: "*"
+        origin: "https://market-project-khalil.vercel.app"
     }));
     app.use(express.json());
     app.use(express.urlencoded({extended: true}));
